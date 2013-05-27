@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIMacro xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Untitled</Name>
+  <Description />
+  <ElapsedTime>12205</ElapsedTime>
+  <Actions>
+    <UIAction xsi:type="UIAssertAction" ResponseTime="0" ExInfo="0" Tag="" FPS="-1">
+      <Condition>(equal (getvar "ScreenSize") '(947 535))</Condition>
+      <ErrMsg>
+ERROR: This macro is recorded using ScreenSize (947,535). 
+Resize the drawing screen correctly to playback the macro.</ErrMsg>
+    </UIAction>
+    <UIAction xsi:type="UIMouseAction" ResponseTime="14" ExInfo="0" Tag="" FPS="71" Flags="MOVE" Data="0" CSType="SCS_DWG" X="497" Y="530" Z="0" />
+    <UIAction xsi:type="UIMouseAction" ResponseTime="6" ExInfo="0" Tag="" FPS="166" Flags="MOVE" Data="0" CSType="SCS_DWG" X="498" Y="529" Z="0" />
+    <UIAction xsi:type="UIMouseAction" ResponseTime="58" ExInfo="0" Tag="" FPS="17" Flags="MOVE" Data="0" CSType="SCS_DWG" X="499" Y="527" Z="0" />
+    <UIAction xsi:type="UIMouseAction" ResponseTime="31" ExInfo="0" Tag="" FPS="32" Flags="MOVE" Data="0" CSType="SCS_DWG" X="500" Y="525" Z="0" />
+    <UIAction xsi:type="UIMouseAction" ResponseTime="46" ExInfo="0" Tag="" FPS="21" Flags="MOVE" Data="0" CSType="SCS_DWG" X="501" Y="525" Z="0" />
+    <UIAction xsi:type="UIMouseAction" ResponseTime="12" ExInfo="0" Tag="" FPS="83" Flags="MOVE" Data="0" CSType="SCS_DWG" X="501" Y="524" Z="0" />
+    <UIAction xsi:type="UIMouseAction" ResponseTime="207" ExInfo="0" Tag="" FPS="4" Flags="MOVE" Data="0" CSType="SCS_DWG" X="502" Y="523" Z="0" />
+    <UIAction xsi:type="UIMouseAction" ResponseTime="1" ExInfo="0" Tag="" FPS="1000" Flags="MOVE" Data="0" CSType="SCS_DWG" X="502" Y="523" Z="0" />
+  </Actions>
+</UIMacro>
