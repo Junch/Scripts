@@ -33,3 +33,9 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# VS STUDIO
+*.suo
+
+# Some output files
+CommandPreview.xml

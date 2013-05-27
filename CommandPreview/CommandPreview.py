@@ -3,6 +3,7 @@ import os
 from xml.etree import ElementTree
 from xml.dom.minidom import parse, parseString
 import argparse
+from tkinter import Tk
 
 class BMReport:
     def __init__(self):
@@ -18,6 +19,10 @@ class BMReport:
         fp.write("<?xml version=\"1.0\" ?>\n")
         fp.write("<UIMacro>\n")
 
+        r = Tk()
+        r.withdraw()
+        r.clipboard_clear()    
+
         items = ["Build", "Benchmark", "Scenario", "Test", "Index", "Key", "ResponseTime", "FPS"]
         actions = self._Data.findall("UIAction")
         for action in actions:
@@ -26,6 +31,15 @@ class BMReport:
                 s += " %s=\"%s\"" %(item , action.get(item))
             s += "/>\n"
             fp.write(s)
+
+            #Send the data to the clipboard
+            line=action.get(items[0])
+            for item in items[1:]:
+                line += "\t" + action.get(item)
+            line += "\n"
+            r.clipboard_append(line)
+
+        r.destroy()
 
         fp.write("</UIMacro>")
         fp.close()
