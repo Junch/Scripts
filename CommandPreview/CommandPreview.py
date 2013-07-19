@@ -98,7 +98,8 @@ class BMCommandPreview:
 
 if __name__ == "__main__":
     # -dir -build -o
-    parser = argparse.ArgumentParser(description='Process the benchmark result of the CommandPreview.')
+    parser = argparse.ArgumentParser(description='Process the benchmark result of the \
+                              CommandPreview. The result is easy to deal with in EXCEL')
     parser.add_argument('-dir', '--dir', help='Specify the bmr dir of CommandPreview') #required=True
     parser.add_argument('-build', '--build', help='Specify the build version of AutoCAD', default='BuildVer')
     parser.add_argument('-o', '--o', help='Specify the output file', default='CommandPreview.xml')
