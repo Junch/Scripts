@@ -39,3 +39,12 @@
     )
     (princ)
 )
+
+(defun drawcircle()
+  (if (not (tblsearch "LTYPE" "Dashed"))
+     (command ".-linetype" "_load" "Dashed" "acad.lin" "")
+  )
+  
+  (command "_circle" "0,0" "1")
+  (command "_chprop" (entlast) "" "_c" "1" "_lt" "Dashed" "")
+)
